@@ -1,3 +1,5 @@
-<h1>Products#index</h1>
+<h1>List of All Products</h1>
 
-<h3>Price of <%= @product %> is <%= product.formatted_price %></h3>
+<% @products.each do |product| %>
+  <p><%= product.name %>, product.price_in_cents</p>
+<% end %>
